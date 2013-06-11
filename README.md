@@ -3,7 +3,7 @@ App42_J2ME_SDK
 
 App42 Cloud API Client SDK files for J2ME
 
-[Download the latest App42 J2ME SDK] (https://github.com/shephertz/App42_J2ME_SDK/raw/master/1.5/app42_j2me_1.5.zip)
+[Download the latest App42 J2ME SDK] (https://github.com/shephertz/App42_J2ME_SDK/raw/master/1.6/app42_j2me_1.6.zip)
 
 [Documentation and API guide] (http://api.shephertz.com/cloudapidocs/index.php)
 
