@@ -11,6 +11,7 @@
 
 ```
 Achievement Service
+Avatar Service 
 ```
 
 **The following features have been pushed to the services :**
@@ -21,14 +22,6 @@ Achievement Service
 facebookPublishStream
 facebookLinkPost
 facebookLinkPostWithCustomThumbnail
-getFacebookProfile
-```
-
-**PUSHNOTIFICATION SERVICE**
-
-```
-sendPushMessageToGroup
-deleteDeviceToken
 ```
 
 
