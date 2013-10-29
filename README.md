@@ -5,6 +5,7 @@ App42 BPaaS Cloud API Client SDK JAR files for J2ME
 
 - Download the App42 BPaaS J2ME SDK
 - Unzip the file and open **App42 J2ME Sample** project.
+- Add the **App42_BPaaS_J2ME_SDK_x.x.x.jar** into library path. **Properties -> Java Build Path -> Liabraries -> Add External JARs**
 - Initialize the library using :-
 
 ```
