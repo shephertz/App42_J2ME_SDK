@@ -1,13 +1,33 @@
-App42_J2ME_SDK
+App42_BPaaS_J2ME_SDK
 ==============
 
-App42 Cloud API Client SDK files for J2ME
+App42 BPaaS Cloud API Client SDK JAR files for J2ME
 
-[Download the latest App42 J2ME SDK] (https://github.com/shephertz/App42_J2ME_SDK/raw/master/1.7/app42_j2me_1.7.zip)
+- Download the App42 BPaaS J2ME SDK
+- Unzip the file and open **App42 J2ME Sample** project.
+- Add the jar refrence into library path. **Properties -> Java Build Path -> Liabraries -> Add External JARs**
+- Initialize the library using
+```
+ServiceAPI sp = new ServiceAPI("<YOUR_API_KEY>","<YOUR_SECRET_KEY>");
+sp.setBaseURL("<YOUR_API_SERVER_URL>");
+```
+- Instantiate the service that one wants to use in the App, e.g. using User service one has to do the following
+```
+UserService userService = sp.buildUserService();
+```
 
-[Documentation and API guide] (http://api.shephertz.com/app42-dev/j2me-s40-backend-apis.php)
+- Now one can call associated method of that service e.g. user creation can be done with the following snippet
 
-Third Party binaries and respective licenses used in App42 SDK are listed below
+```
+String userName = "Nick";
+String pwd = "********";
+String emailId = "nick@shephertz.co.in";    
+User user = userService.createUser(userName, pwd, emailId); 
+System.out.println("userName is " + user.getUserName());
+System.out.println("emailId is " + user.getEmail());
+```
+
+- Build the project and run.
 
 =============
 JSON.org
