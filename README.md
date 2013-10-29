@@ -6,17 +6,20 @@ App42 BPaaS Cloud API Client SDK JAR files for J2ME
 - Download the App42 BPaaS J2ME SDK
 - Unzip the file and open **App42 J2ME Sample** project.
 - Add the jar refrence into library path **(Properties -> Java Build Path -> Liabraries -> Add External JARs)**.
-- Initialize the library using
+- Initialize the library using :-
+
 ```
 ServiceAPI sp = new ServiceAPI("<YOUR_API_KEY>","<YOUR_SECRET_KEY>");
 sp.setBaseURL("<YOUR_API_SERVER_URL>");
 ```
-- Instantiate the service that one wants to use in the App, e.g. using User service one has to do the following
+
+- Instantiate the service that one wants to use in the App, e.g. using User service one has to do the following :-
+
 ```
 UserService userService = sp.buildUserService();
 ```
 
-- Now one can call associated method of that service e.g. user creation can be done with the following snippet
+- Now one can call associated method of that service e.g. user creation can be done with the following snippet :-
 
 ```
 String userName = "Nick";
