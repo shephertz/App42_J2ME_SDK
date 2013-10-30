@@ -1,7 +1,7 @@
 App42_BPaaS_J2ME_SDK
 ==============
 
-App42 BPaaS Cloud API Client SDK JAR files for J2ME
+App42 BPaaS Cloud API Client SDK for J2ME
 
 - Download the App42 BPaaS J2ME SDK
 - Unzip the file and open **App42 J2ME Sample** project.
