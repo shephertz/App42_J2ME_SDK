@@ -11,9 +11,9 @@ __Download And Set Up SDK :-__
 
 2). Unzip the downloaded Zip file. Unzipped folder contains version folders of jar and a sample folder.
 
-3). Version folder (i.e _0.0_, _0.1_ etc) will contain _App42_J2ME_x.x.x.jar_ and docs.
+3). Version folder (i.e __0.0__, __0.1__ etc) will contain __App42_J2ME_SDK_x.x.x.jar__ and docs.
 
-4). Then add _App42_J2ME_x.x.x.jar_ in your lib folder.
+4). Then add __App42_J2ME_SDK_x.x.x.jar__ in your lib folder.
  
 5). Put the jar file in class path of your J2ME project.
 
