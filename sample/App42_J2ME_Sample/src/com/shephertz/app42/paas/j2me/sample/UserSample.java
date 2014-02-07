@@ -1,8 +1,6 @@
 package com.shephertz.app42.paas.j2me.sample;
-
 import javax.microedition.midlet.MIDlet;
 import javax.microedition.midlet.MIDletStateChangeException;
-
 import com.shephertz.app42.paas.sdk.jme.App42BadParameterException;
 import com.shephertz.app42.paas.sdk.jme.App42Exception;
 import com.shephertz.app42.paas.sdk.jme.App42SecurityException;
@@ -24,14 +22,12 @@ public class UserSample extends MIDlet {
 
 	protected void pauseApp() {
 		// TODO Auto-generated method stub
-
 	}
 
 	protected void startApp() throws MIDletStateChangeException {
 		//create user on start of App
 		
 		createUser();
-
 	}
 	
 	/**
@@ -40,14 +36,14 @@ public class UserSample extends MIDlet {
 	public static void createUser() {
 		// Enter your Public Key and Private Key Here in Constructor. You can 
 		// get it once you will create a app in app42 console
-		ServiceAPI sp = new ServiceAPI("YOUR API KEY","YOUR SECRET KEY");
+		ServiceAPI sp = new ServiceAPI("YOUR_API_KEY","YOUR_SECRET_KEY");
 		// Create Instance of User Service
 		UserService userService = sp.buildUserService();
 
 		// create user or call other available method on the user service
 		// reference
 		try {
-			System.out.println(" Starting User Creation test");
+			System.out.println("Starting User Creation test");
 			User user = userService.createUser("Nick", "test",
 					"nick@shephertz.com");
 			
@@ -57,7 +53,8 @@ public class UserSample extends MIDlet {
 			//Using returned User object, user property can be fetched
 			//Fetch User name from user object
 			System.out.println(" Created User Name is : " + user.getUserName());
-		} catch (App42BadParameterException ex) {
+		} 
+		catch (App42BadParameterException ex) {
 			System.out.println("App42BadParameterException ");
 			// Exception Caught
 			// Check if User already Exist by checking app error code
@@ -66,10 +63,10 @@ public class UserSample extends MIDlet {
 				System.out.println(" User already exist with given user name");
 			}
 		} catch (App42SecurityException ex) {
-			System.out.println("App42SecurityException ");
 			// Exception Caught
 			// Check for authorization Error due to invalid Public/Private Key
 			if (ex.getAppErrorCode() == 1401) {
+				System.out.println("Please verify your API_KEY and SECRET_KEY from AppHq Management console(apphq.shephertz.com).");
 				// Do exception Handling here
 			}
 		} catch (App42Exception ex) {

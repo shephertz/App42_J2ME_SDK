@@ -3,6 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="res"/>
 	<classpathentry exported="true" kind="con" path="org.elipse.mtj.JavaMEContainer/Nokia SDK 1.1 for Java/Nokia_SDK_1_1_Java"/>
-	<classpathentry kind="lib" path="lib/App42_J2ME-1.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/App42_J2ME_SDK_2.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
