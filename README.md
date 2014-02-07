@@ -1,11 +1,39 @@
 App42_J2ME_SDK
 ==============
 
-App42 Cloud API Client SDK files for J2ME
+1. [Register] (https://apphq.shephertz.com/register) with App42 platform.
+2. Create an app once you are on Quick start page after registration.
+3. If you are already registered, login to [AppHQ] (http://apphq.shephertz.com/register/app42Login) console and create an app from App Manager Tab.
 
-[Download the latest App42 J2ME SDK] (https://github.com/shephertz/App42_J2ME_SDK/raw/master/1.6/app42_j2me_1.6.zip)
+__Download And Set Up SDK :-__
 
-[Documentation and API guide] (http://api.shephertz.com/cloudapidocs/index.php)
+1). [Download] (https://github.com/shephertz/App42_J2ME_SDK/archive/master.zip) J2ME SDK
+
+2). Unzip the downloaded Zip file. Unzipped folder contains version folders of jar and a sample folder.
+
+3). Version folder (i.e __0.0__, __0.1__ etc) will contain __App42_J2ME_SDK_x.x.x.jar__ and docs.
+
+4). Then add __App42_J2ME_SDK_x.x.x.jar__ in your lib folder.
+ 
+5). Put the jar file in class path of your J2ME project.
+
+__Initializing SDK :-__
+You have to instantiate App42API by putting your ApiKey/SecretKey to initialize the SDK.
+
+```
+App42API.initialize("YOUR_API_KEY","YOUR_SECRET_KEY"); 
+```
+
+__Using App42 Services :-__
+ You have to build target service that you want to use in your app. For example, User Service can be build with following snippet. Similarly you can build other service also with same notation.
+ 
+```
+UserService userService = App42API.buildUserService();
+//Similarly you can build other services like App42API.buildXXXXService()
+```
+
+[Documentation and API guide] (http://api.shephertz.com/app42-dev/j2me-s40-backend-apis.php)
+
 
 Third Party binaries and respective licenses used in App42 SDK are listed below
 
